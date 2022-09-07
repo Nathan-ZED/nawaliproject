@@ -79,6 +79,6 @@ radioTerrainEtConstruction.addEventListener('change', () => showAll())
           }).then(
               response => response.json()
           ).then((html) => {
-            window.location.replace(`${protocol}//${host}/thanks.html`)
+            window.location.replace(`${protocol}//${host}/nawaliproject/thanks.html`)
           });
         });
