@@ -1,0 +1,381 @@
+@import url('http://fonts.cdnfonts.com/css/bw-modelica');
+
+body {
+    font-family: 'Bw Modelica', sans-serif;
+}
+
+nav img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+}
+
+.main-2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-none {
+    display: none !important;
+}
+
+form h2 {
+    width: 100%;
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 100;
+    margin: auto;
+    padding: 10px 10%;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #42a7c59f;
+    backdrop-filter: blur(8px);
+    z-index: 20;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    flex-direction: row-reverse;
+    margin: auto;
+    padding: 10px 10%;
+    justify-content: space-between;
+    background: #42a7c59f;
+    backdrop-filter: blur(8px);
+    z-index: 20;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+footer div a:last-child {
+    font-size: 12px;
+}
+
+
+.container  {
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 5rem 0 0;
+}
+
+.text h1,
+.text p {
+    margin: 0;
+}
+
+.text h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #42a7c5;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0 0 1rem;
+    width: 50%;
+    margin: 8rem 0;
+}
+
+.container .radio-flex {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.radio-flex li {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 2rem 0 0;
+}
+
+.radio-flex li label {
+    margin: 0;
+}
+
+.radio-flex li input[type='radio']:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.radio-flex li input[type='radio']:checked:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: -2px;
+    left: -2px;
+    position: relative;
+    background-color: #4ec1e5;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.container form .input-block {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 3.3rem .5rem 0;
+    width: 40%;
+}
+
+.row-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    margin: 0 0 .5rem 0;
+    color: #000;
+    font-weight: 500;
+}
+
+label::selection {
+    background: #4ec1e5;
+    color: #fff;
+  }
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: .5px solid #4ec1e5;
+    background: #4ec2e526;
+    color: #4ec1e5;
+    width: 220px;
+}
+
+select {
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 8px;
+    border: .5px solid #4ec1e5;
+    background: #4ec2e526;
+    color: #4ec1e5;
+    width: 250px; 
+}
+
+input::placeholder, select::placeholder {
+    color: #4ec2e590;
+}
+
+input:focus, select:focus {
+    outline: 1px solid #4ec1e5;
+}
+
+input[type="submit"] {
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background: #4ec1e5;
+    width: 50%;
+    font-size: 17px;
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover {
+    background: #42a7c5
+}
+
+input[type="submit"]:active {
+    background: #3d9bb8
+}
+
+.finish-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.finish-block h1 {
+    text-align: center;
+}
+
+.finish-block .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finish-block a {
+    margin: 2rem 0 0 0;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    background: #4ec1e5;
+    align-self: center;
+}
+
+
+
+/* 
+TABLETTE
+*/
+
+@media (max-width: 900px) {
+  
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .container form {
+        width: 95%;
+        margin: 2rem 0;
+    }
+
+    .input-block {
+        margin-right: 0px !important;
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-block label {
+        width: 95%;
+        margin: 1rem 0 .5rem 0
+    }
+
+    form h2 {
+        width: 95%;
+        margin: 2rem 0 0;
+    }
+
+    .container form .input-block {
+        width: 90%;
+    }
+
+    select,
+    input[type="submit"] {
+        width: 95%;
+    }
+
+    input[type="submit"] {
+        margin: 2rem auto;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+
+    .text {
+        width: 100%;
+        margin: 7rem 0 0 0 !important;
+    }
+
+    .row-form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }
+  
+
+/* 
+MOBILE
+*/
+
+@media (max-width: 768px) {
+
+    .container .radio-flex {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        justify-content: flex-start;
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .radio-flex li {
+        margin: 1rem 2rem 0 0;
+    }
+
+    footer div {
+        width: 68%;
+    }
+
+    select,
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 90%;
+    }
+}

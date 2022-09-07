@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Nawali</title>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">
+            <img src="./assets/images/logo.webp" alt="nawali logo" />
+        </a>
+    </nav>
+    <main class="main-2">
+        <article class="finish-block">
+            <div class="top">
+                <img src="./assets/images/checked.svg" alt="message envoyé"/>
+                <h1>Votre demande à bien été prise en compte.<br>Merci !</h1>
+            </div>
+            <a class="a" href="">Retour à l'accueil</a>
+        </article>
+    </main>
+    <footer>
+        <a href="index.html">
+            <img src="./assets/images/logo.webp" alt="nawali logo" />
+        </a>
+        <div>
+            <a href="#">Mentions légales</a>
+            <a href="#" id="copyrights"></a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        const copyrights = document.querySelector('#copyrights');
+        const actualYear = new Date().getFullYear();
+        const main2 = document.querySelector('.a')
+        const host = window.location.host
+        const protocol = window.location.protocol
+
+        main2.href =`${protocol}//${host}/index.html`
+        
+
+        //Mise à jour automatique de l'année des copyrights du footer
+        copyrights.textContent = `Copyrights ©${actualYear}`
+    </script>
+</body>
+</html>
